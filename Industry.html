@@ -122,6 +122,66 @@
             /* padding-bottom: 20px; */
         }
 
+
+.filter-section {
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0056b3;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.image-box {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.4; /* Default faded look */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-box.highlight {
+  opacity: 1; /* Highlighted look */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
 		</style>
 	</head>
 	<body>
@@ -199,12 +259,12 @@
 														</li>
 													</ul>
 												</li>
-												<li>
+												<!-- <li>
 													<a class="nav-link" href="Clients.html">
 														Our Clients
 													</a>
 
-												</li>
+												</li> -->
 												<li>
 													<a class="nav-link " href="Vendors.html">
 														Vendors
@@ -298,11 +358,7 @@
 						</div>
 					</div>
 					</section>
-				
 
-				
-
-		
                 
                 <section class="bg-color-light" style="margin-bottom: -44px;">
                        <!-- card section -->
@@ -407,8 +463,132 @@
                         </div>
                     </div>
                 </section>
-               
 
+					<!--our partners  -->
+					<section class="container" style="margin-top: 75px;text-align: center;">
+
+						<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+							<hr class="bg-primary border-radius m-auto">
+						</div>
+						<div class="overflow-hidden mb-1">
+							<h3 class="font-weight-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Partners</h3>
+						</div>
+
+						<div class="filter-section text-center mt-5">
+							<div class="filter-buttons">
+							<button class="filter-btn active" data-category="all">All</button>
+							<button class="filter-btn active" data-category="bandwidth">Bandwidth/Guest Management</button>
+							<button class="filter-btn active" data-category="digital-signage">Digital signage/IPTV</button>
+							<button class="filter-btn active" data-category="ip-telephones">IP Telephones</button>
+							<button class="filter-btn active" data-category="load-balancer">Load Balancer/Link Aggregation</button>
+							<button class="filter-btn active" data-category="storage-and-servers">Storage and Servers</button>
+							<button class="filter-btn active" data-category="switches">Switches</button>
+							<button class="filter-btn active" data-category="wireless">Wireless</button>
+							<button class="filter-btn active" data-category="transportation">Transportation</button>
+						</div>
+
+						<div class="image-container">
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="bandwidth">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="switches">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="bandwidth">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="switches">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+							<div class="image-box" data-category="">
+								<img src="img/MainWebsiteImages/Our Products - Altro Smart/our-product-altro-smart-features-point6.png" alt="">
+							</div>
+
+						</div>
+					</div>
+					</section>
+				
+				<!-- our clients -->
+					<section class="section border-0 bg-light m-0 mb-2">
+						<div class="container py-4">
+							<div class="row justify-content-center">
+								<div class="col col-lg-9 text-center">
+	
+									<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+										<hr class="bg-primary border-radius m-auto">
+									</div>
+									<div class="overflow-hidden mb-1">
+										<h3 class="font-weight-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+									</div>
+								   
+								</div>
+							</div>
+							<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
+								<div class="carousel-inner text-center">
+									<div class="carousel-item active">
+										<div class="row align-items-center justify-content-center">
+											<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png" alt="ADNOC" class="img-fluid" style="max-width: 90px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png" alt="Dutech" class="img-fluid" style="max-width: 140px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png" alt="Golden" class="img-fluid" style="max-width: 140px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG" class="img-fluid" style="max-width: 100px;">
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="row align-items-center justify-content-center">
+											
+											<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png" alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png" alt="Novotel" class="img-fluid" style="max-width: 140px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png" alt="Oman" class="img-fluid" style="max-width: 100px;">
+											</div>
+											<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+												<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png" alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</section>
 
                 <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
 					<div class="container py-5">
@@ -733,11 +913,11 @@
 												Offerings
 											</a>
 										</li>
-										<li class="dropdown-secondary">
+										<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
 												Our Clients
 											</a>
-										</li>
+										</li> -->
                                         <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Vendors.html">
 												Vendors
@@ -844,5 +1024,33 @@
 				typePhrase('typing-demo', ['ICT Solutions,', 'Cyber Security,', 'Communications'], 100, 100);
 			};
 		</script>
+<script>
+const filterButtons = document.querySelectorAll(".filter-btn");
+const imageBoxes = document.querySelectorAll(".image-box");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Remove the active class from all buttons
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    // Add active class to the clicked button
+    button.classList.add("active");
+
+    // Get the category of the clicked button
+    const category = button.getAttribute("data-category");
+
+    // Highlight or fade images based on the category
+    imageBoxes.forEach((box) => {
+      if (category === "all" || box.getAttribute("data-category") === category) {
+        box.classList.add("highlight"); // Highlight the filtered images
+      } else {
+        box.classList.remove("highlight"); // Fade the non-filtered images
+      }
+    });
+  });
+});
+
+// Trigger the "All" button on page load
+document.querySelector(".filter-btn[data-category='all']").click();
+</script>
 	</body>
 </html>

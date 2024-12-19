@@ -136,7 +136,7 @@
     color: white;
 }
 
-.flip-card {
+/* .flip-card {
     background-color: transparent;
     width: 30%;
     perspective: 300px;
@@ -150,9 +150,9 @@
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+} */
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
@@ -161,7 +161,7 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-}
+} */
 
 /* .flip-card-front {
     position: relative;
@@ -639,6 +639,86 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
     }
 }
 
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 260px;
+  height: 280px;
+  background-color: dark;
+  -webkit-box-shadow: 1px 1px 12px #005ce6;;
+  box-shadow: 1px 1px 12px #005ce6;;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+  padding: 30px;
+  
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: #005ce6;;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #005ce6;;
+  box-shadow: 1px 1px 12px #005ce6;;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  overflow: hidden;
+  padding: 10px; /* Optional, for some inner spacing */
+}
+
+.cover img {
+	margin-top: auto;
+	height: 120px;
+	width: 100px;
+    margin-bottom: auto; /* Push the image to the center */
+}
+
+.cover h2 {
+  margin-top: auto; /* Push the heading to the bottom */
+  color: white;
+  font-size: 28px; /* Adjust font size as needed */
+  text-align: center;
+  margin-bottom: auto;
+}
+
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-90deg);
+  -ms-transform: rotatey(-90deg);
+  transform: rotatey(-90deg);
+}
+
+/* img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+} */
+
 
 
 
@@ -713,12 +793,12 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 															</li>
 														</ul>
 													</li>
-													<li>
+													<!-- <li>
 														<a class="nav-link" href="Clients.html">
 															Our Clients
 														</a>
 														
-													</li>
+													</li> -->
 													<li>
 														<a class="nav-link" href="Vendors.html">
 															Vendors
@@ -767,6 +847,58 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 
 				<section style="
 				position: relative; 
+				background-color: #F4F9FD; 
+				padding: 50px ; 
+				height: 420px; 
+				width: 100%; /* Adjust the width as needed */
+				
+			"class="bg-color-quaternary" >
+					<div class="container">
+						<div class="row py-4">
+							<div style="
+							display: flex; 
+							flex-direction: column; 
+							align-items: center; 
+							padding: 0; 
+							text-align: center; 
+							flex: 0 0 100%; 
+							order: 2;
+							margin-top: 100px;
+							max-width: 100%; /* Ensures full width on small screens */
+						">
+								<h1 class="d-flex justify-content-center" style="
+								color: black; 
+								font-weight: bold; 
+								font-size: 36px; 
+								margin: 0; 
+								padding: 0; 
+								line-height: 1.2;
+								text-align: center; /* Centered on smaller screens */
+								width: 100%;"> Hive Pro</h1>
+								<p style="
+								font-weight: 500; 
+								font-size: 20px; 
+								line-height: 1.5; 
+								margin-top: 20px;
+								text-align: center; /* Centered on smaller screens */
+								width: 100%;
+								color: black;
+							">
+								Advanced Data-Driven Pentest Platform And Service
+								<span id="typing-demo" class="animated-text text-decoration-underline"></span>
+							</p>	
+							<a href="ContactUs.html"
+							class="d-flex justify-content-center btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2  d-xl-block anim-hover-translate-right-5px transition-2ms"
+							style="height: 40px; width: 220px; background-color: transparent; border: 2px solid black; color: black; transition: background-color 0.3s, color 0.3s;">Get Free Consultation <i
+								class="fas fa-arrow-right ms-2"></i></a>                               <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
+		  
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section style="
+				position: relative; 
 				background-color: #ffffff; 
 				padding: 100px ;  
 				background-repeat: no-repeat;
@@ -797,17 +929,13 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 						width: 100%;">Hive Pro</h1>
 								<p class="font-weight-medium text-5 line-height-5 mt-4 text-color-dark">
 									Advanced Data-Driven Pentest Platform And Service
-								<!-- <span id="animated-text" class="animated-text">ICT Solutions</span>. -->
 								  </p>	
                                   <a href="ContactUs.html" class="btn btn-modern btn-primary btn-outline btn-arrow-effect-1 text-capitalize text-2-5 ms-1 me-2 d-block d-md-none d-xl-block anim-hover-translate-right-5px transition-2ms" 
-								  style="height: 40px; width: 220px; background-color: transparent; border: 2px solid #000000; color: #000000; transition: background-color 0.3s, color 0.3s;" >Know More <i class="fas fa-arrow-right ms-2"></i></a>
-					
-                                <!-- <a href="#" class="btn btn-secondary btn-outline btn-rounded font-weight-bold btn-px-5 py-3">Get Free Consultation</a> -->
-		  
+								  style="height: 40px; width: 220px; background-color: transparent; border: 2px solid #000000; color: #000000; transition: background-color 0.3s, color 0.3s;" >Know More <i class="fas fa-arrow-right ms-2"></i></a>  
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 				
 
 
@@ -832,7 +960,7 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 			
 				
 				<!-- zigzag section -->
-				<div class="row align-items-center mb-5 ml-5 mr-5">
+				<div class="row align-items-center mb-5 ml-5 mr-5 container" style="margin:30px auto !important;padding: 0 auto !important;">
 					<div class="col-lg-6 order-lg-1 text-lg-left text-center pl-lg-5 mt-3">
 						<h2 class="text-color-dark font-weight-medium text-8 mb-4 ml-4"><strong>Hive - Leading The Future
 						</strong></h2>
@@ -853,7 +981,7 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 				  -->
 						
 				  <section class="section bg-color-quaternary bg-color-white position-relative border-0 p-0 mt-5 pl-lg-5">
-					  <h3 class="bg-color-quaternary text-center px-1 font-weight-bold text-color-black positive-ls-3 text-7 mb-0 pt-5 appear-animation mt-3" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Scope Of Services</h3>
+					  <h3 class="bg-color-quaternary text-center px-1 font-weight-bold text-color-black positive-ls-3 text-8 mb-0 pt-5 appear-animation mt-3" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Scope Of Services</h3>
 					<div class="container custom-container-background z-index-1 py-1 ">
 						<div class="row align-items-center pb-5 pb-lg-0 mb-2 mb-lg-0 " style="margin-top:50px !important;margin-bottom: 50px !important;">
 							
@@ -915,189 +1043,118 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 				</section>
 
 
-<section class="container-fluid main1 relative h-auto mb-5 mt-5">
-    <section class="row d-flex ">
-        <!-- Card: Ski -->
-        <section class="card-section col-lg-4  col-md-12 mb-2">
-            <div class="card" style=" border: none;">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                        <div class="card-front text-center">
-                            <div class="card-front__tp card-front__tp--ski">
-								<img src="img/newimg/New folder/End User.png" style="width: 100px;" alt="">
-							</div>
-							<h2 class="card-front__heading" style="text-align: center;font-weight: 600;justify-content: center;">
-							   Benefits For End User
-							  </h2>
+	<!-- section-second -->
+	 <section class="container" style="margin: 30px auto !important;padding: 0 auto !important;">
+		<div class="d-flex gap-5 justify-content-center align-items-center" style="margin: 0 auto !important;padding: 0 auto !important;">
+		<!-- card-1-benefits -->
+		<div class="book">
+			<p>
+			All data and applications are hosted within the GCC to ensure compliance with regional data regulations.
+			<br><br>Enhanced cloud performance with locally hosted data for faster and more reliable access.
+		  </p>
+			
+			<div class="cover">
+				<img src="img/newimg/New folder/End User.png" width="25px" height="25px" />
+			    <h2 style="color: white;">Benefits For End User</h2>
+			</div>
+		  </div>
+         
+		  <!-- card-2 -->
+		  <div class="book">
+			<p>	Cloud-Based Services Can Be Locally Hosted Within the Region.
+				<br><br>Offer Local Instances for Demos and POCs to Resellers and Customers.
+				</p>
+		
+			<div class="cover">
+			<img src="img/newimg/New folder/vendor.png" width="25px" height="25px" />
+			<h2 style="color: white;">Benefits For Vendors</h2>
+			</div>
+		  </div>
 
-                            <div class="card-front__bt">
-                             
-                            </div>
-                        </div>
-
-                        <div class="card-back text-center" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							<img src="img/newimg/New folder/End User (3).png" width="150px" height="100px" alt="">
-						</div>
-                    </div>
-                </div>
-
-                <div class="inside-page">
-                    <div class="inside-page__container">
-                        <h3 class="inside-page__heading inside-page__heading--camping" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							All data and applications are hosted within <br>the GCC to ensure compliance with regional <br> data regulations.
-						</h3>
-                        <p class="inside-page__text" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-                            Enhanced cloud performance with locally hosted data for faster and more reliable access.
-						</p>
-                        <!-- <a href="#" class="inside-page__btn inside-page__btn--ski">View deals</a> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Card: Beach -->
-        <section class="card-section col-lg-4 col-md-12">
-            <div class="card" style=" border: none;">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                        <div class="card-front">
-                            <div class="card-front__tp card-front__tp--beach">
-								<img src="img/newimg/New folder/vendor.png" style="width: 100px;" alt="">
-							</div>
-							<h2 class="card-front__heading" style="text-align: center;font-weight: 600;justify-content: center;">
-							 Benefits For Vendors
-							</h2>
-
-                            <div class="card-front__bt">
-                                
-                            </div>
-                        </div>
-						<div class="card-back text-center" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							<img src="img/newimg/New folder/Vendor (2).png" width="150px" height="100px" alt="">
-						</div>
-                    </div>
-                </div>
-
-                <div class="inside-page">
-                    <div class="inside-page__container">
-                        <h3 class="inside-page__heading inside-page__heading--camping" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							Cloud-Based Services Can Be Locally Hosted <br> Within the Region
-						</h3>
-                        <p class="inside-page__text" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-                            Offer Local Instances for Demos and POCs to Resellers and Customers
-                        </p>
-                        <!-- <a href="#" class="inside-page__btn inside-page__btn--beach">View deals</a> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Card: Camping -->
-        <section class="card-section col-lg-4 col-md-12">
-            <div class="card" style=" border: none;">
-                <div class="flip-card">
-                    <div class="flip-card__container">
-                        <div class="card-front">
-                            <div class="card-front__tp card-front__tp--beach">
-								<img src="img/newimg/New folder/partner.png" style="width: 115px;"  alt="">								
-							</div>
-							<h2 class="card-front__heading"style="text-align: center;font-weight: 600;justify-content: center;">
-							 Benefits For Partners
-							</h2>
-
-                            <div class="card-front__bt">    
-                            </div>
-                        </div>
-						<div class="card-back text-center" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							<img src="img/newimg/New folder/Partner (3).png" width="150px" height="100px" alt="">
-						</div>
-                    </div>
-                </div>
-
-                <div class="inside-page">
-                    <div class="inside-page__container">
-                        <h3 class="inside-page__heading inside-page__heading--camping" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-							Simpra Application Catalog Access
-						</h3>
-                        <p class="inside-page__text" style="font-size: small;text-align: center;font-weight: 600;justify-content: center;">
-                            Can rebrand Simpra HIVE with their Logos (a SaaS like model) for Apps and Customers management.
-                        </p>
-                        <!-- <a href="#" class="inside-page__btn inside-page__btn--camping">View deals</a> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+          <!-- card-3 -->
+		  <div class="book">
+			<p>
+					Simpra Application Catalog Access.
+				<br><br>Can rebrand Simpra HIVE with their Logos (a SaaS like model) for Apps and Customers management.
+			</p>
+			<div class="cover">
+			  <img src="img/newimg/New folder/partner.png" width="25px" height="25px" />
+			  <h2 style="color: white;"> Benefits For Partners</h2>
+			</div>
+		  </div>
+		</div>
+	 </section>
 
 </section>
 			
                 
 <!-- our clients -->
-<section class="section border-0 bg-light m-0 mb-2">
-	<div class="container py-4">
-		<div class="row justify-content-center">
-			<div class="col col-lg-9 text-center">
+	<!-- our clients -->
+	<section class="section border-0 bg-light m-0 mb-2">
+		<div class="container py-4">
+			<div class="row justify-content-center">
+				<div class="col col-lg-9 text-center">
 
-				<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
-					<hr class="bg-primary border-radius m-auto">
+					<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+						<hr class="bg-primary border-radius m-auto">
+					</div>
+					<div class="overflow-hidden mb-1">
+						<h3 class="font-weight-bold text-color-dark positive-ls-3 text-8 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
+					</div>
+				   
 				</div>
-				<div class="overflow-hidden mb-1">
-					<h3 class="font-weight-semi-bold text-color-dark text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">Our Clients</h3>
-				</div>
-			   
 			</div>
-		</div>
-		<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
-			<div class="carousel-inner text-center">
-				<div class="carousel-item active">
-					<div class="row align-items-center justify-content-center">
-						<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png" alt="ADNOC" class="img-fluid" style="max-width: 90px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" style="max-width: 140px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png" alt="Dutech" class="img-fluid" style="max-width: 140px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png" alt="Golden" class="img-fluid" style="max-width: 140px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG" class="img-fluid" style="max-width: 100px;">
+			<div id="clientsCarousel" class="carousel slide mt-5" data-ride="carousel">
+				<div class="carousel-inner text-center">
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ADNOC Client.png" alt="ADNOC" class="img-fluid" style="max-width: 90px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Al Diar Hotels Client.png" alt="AL Diar" class="img-fluid" style="max-width: 140px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Dutech Client.png" alt="Dutech" class="img-fluid" style="max-width: 140px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Golden Tulip Client.png" alt="Golden" class="img-fluid" style="max-width: 140px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\IHG Client.png" alt="IHG" class="img-fluid" style="max-width: 100px;">
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="row align-items-center justify-content-center">
-						
-						<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png" alt="MIllennium" class="img-fluid" style="max-width: 100px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png" alt="Novotel" class="img-fluid" style="max-width: 140px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png" alt="Oman" class="img-fluid" style="max-width: 100px;">
-						</div>
-						<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
-							<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png" alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center">
+							
+							<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\MIllennium Client.png" alt="MIllennium" class="img-fluid" style="max-width: 100px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Novotel Client.png" alt="Novotel" class="img-fluid" style="max-width: 140px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-sm-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\Oman Tel Client.png" alt="Oman" class="img-fluid" style="max-width: 100px;">
+							</div>
+							<div class="col-sm-4 col-lg-2 mb-2 mb-lg-0">
+								<img src="img\MainWebsiteImages\Home Page\Home Page Icons\ooredoo Client.png" alt="ooredoo" class="img-fluid" style="max-width: 100px;">
+							</div>
 						</div>
 					</div>
+					
 				</div>
-				
+				<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			<a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
 		</div>
-	</div>
-</section>
+	</section>
   
 <!-- cta -->
                 <section class="parallax section section-text-light section-parallax bg-primary m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img\MainWebsiteImages\Home Page\CTA IMage.jpg">
@@ -1214,11 +1271,11 @@ box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
 												Offerings
 											</a>
 										</li>
-										<li class="dropdown-secondary">
+										<!-- <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
 												Our Clients
 											</a>
-										</li>
+										</li> -->
                                         <li class="dropdown-secondary">
 											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Vendors.html">
 												Vendors
